@@ -27,26 +27,32 @@ $$
 
 ### Aceleraciones
 
-En el eje X:
+## Ecuaciones en el eje X
 
-```math
-a_x = (-F_d / m) \* (v_x / v)
-```
+$$
+a_x = -\,\frac{F_d}{m}\,\frac{v_x}{v}
+$$
 
-En el eje Y:
+## Ecuaciones en el eje Y
 
-```math
-a_y = -g + (-F_d / m) \* (v_y / v)
-```
+$$
+a_y = -g - \frac{F_d}{m}\,\frac{v_y}{v}
+$$
 
-### Integración numérica
+---
 
-La velocidad y posición se actualizan usando integración de Euler con paso dt:
+## Integración numérica (Método de Euler)
 
-```math
-v = v + a \* dt
-```
+Actualización de la velocidad:
 
-```math
-x = x + v \* dt
-```
+$$
+\vec{v} = \vec{v} + \vec{a}\,\Delta t
+$$
+
+Actualización de la posición:
+
+$$
+\vec{x} = \vec{x} + \vec{v}\,\Delta t
+$$
+
+---
