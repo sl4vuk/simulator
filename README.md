@@ -1,4 +1,4 @@
-# 🔰 Simulador de Movimiento Parabólico (PySide6)
+# 🔰 Simulador de Movimiento Parabólico
 
 Simulador educativo del movimiento parabólico con resistencia del aire, viento y parámetros físicos ajustables, con visualización en tiempo real mediante Matplotlib y una interfaz minimalista en PySide6.
 
@@ -19,13 +19,34 @@ Incluye animación de la trayectoria y lectura visual de datos como alcance, alt
 
 ## 📚 Física aplicada
 
-Fuerza de arrastre del aire:
+### Fuerza de arrastre del aire
 
-F*d = 0.5 * ρ _ Cd _ A \_ v²
+```math
+F*d = 0.5 * ρ _ C_d _ A \_ v^2
+```
 
-Aceleraciones:
+### Aceleraciones
 
-ax = (-F*d / m) * (vx / v)
-ay = -g + (-F*d / m) * (vy / v)
+En el eje X:
 
-Velocidad y posición se actualizan usando integración de Euler con paso `dt`.
+```math
+a_x = (-F_d / m) \* (v_x / v)
+```
+
+En el eje Y:
+
+```math
+a_y = -g + (-F_d / m) \* (v_y / v)
+```
+
+### Integración numérica
+
+La velocidad y posición se actualizan usando integración de Euler con paso dt:
+
+```math
+v = v + a \* dt
+```
+
+```math
+x = x + v \* dt
+```
