@@ -21,9 +21,9 @@ Incluye animación de la trayectoria y lectura visual de datos como alcance, alt
 
 ### Fuerza de arrastre del aire
 
-```math
-F*d = 0.5 * ρ _ C_d _ A \_ v^2
-```
+$$
+\vec{F}_d = -\tfrac{1}{2} \rho C_d A v^2 \, \hat{v}
+$$
 
 ### Aceleraciones
 
