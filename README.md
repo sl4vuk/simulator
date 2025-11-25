@@ -17,13 +17,13 @@ El programa calcula la trayectoria de un proyectil lanzado con velocidad inicial
 
 Incluye animación de la trayectoria y lectura visual de datos como alcance, altura máxima, velocidad y energía.
 
-### Launch Command
+### Comando para iniciar
 
 ```ps1
 python gui.py
 ```
 
-### Requirements
+### Requisitos
 
 ```ps1
 pip install PySide6 matplotlib numpy
@@ -44,28 +44,28 @@ $$
 
 1. **Posición:**
 
-   - Ecuaciones en el eje X
+- Ecuaciones en el eje X
 
-   $$
-   a_x = -\,\frac{F_d}{m}\,\frac{v_x}{v}
-   $$
+$$
+a_x = -\,\frac{F_d}{m}\,\frac{v_x}{v}
+$$
 
-   - Ecuaciones en el eje Y
+- Ecuaciones en el eje Y
 
-   $$
-   a_y = -g - \frac{F_d}{m}\,\frac{v_y}{v}
-   $$
+$$
+a_y = -g - \frac{F_d}{m}\,\frac{v_y}{v}
+$$
 
 2. **Integración numérica (Método de Euler)**
 
-   Actualización de la velocidad:
+- Actualización de la velocidad:
 
-   $$
-   \vec{v} = \vec{v} + \vec{a}\,\Delta t
-   $$
+$$
+\vec{v} = \vec{v} + \vec{a}\,\Delta t
+$$
 
-   Actualización de la posición:
+- Actualización de la posición:
 
-   $$
-   \vec{x} = \vec{x} + \vec{v}\,\Delta t
-   $$
+$$
+\vec{x} = \vec{x} + \vec{v}\,\Delta t
+$$
