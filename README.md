@@ -1,3 +1,5 @@
+[![Chat-GPT-Image-Nov-25-2025-05-29-48-AM.png](https://i.postimg.cc/qv05BGv0/Chat-GPT-Image-Nov-25-2025-05-29-48-AM.png)](https://postimg.cc/ppGZqzj1)
+
 # 🔰 Simulador de Movimiento Parabólico
 
 Simulador educativo del movimiento parabólico con resistencia del aire, viento y parámetros físicos ajustables, con visualización en tiempo real mediante Matplotlib y una interfaz minimalista en PySide6.
@@ -15,6 +17,21 @@ El programa calcula la trayectoria de un proyectil lanzado con velocidad inicial
 
 Incluye animación de la trayectoria y lectura visual de datos como alcance, altura máxima, velocidad y energía.
 
+### Launch Command
+
+```ps1
+python gui.py
+```
+
+### Requirements
+
+```ps1
+pip install PySide6 matplotlib numpy
+```
+
+> [!NOTE]
+> Usar python 3.12 en adelante
+
 ---
 
 ## 📚 Física aplicada
@@ -25,30 +42,30 @@ $$
 \vec{F}_d = -\tfrac{1}{2} \rho C_d A v^2 \, \hat{v}
 $$
 
-- Ecuaciones en el eje X
+1. **Posición:**
 
-$$
-a_x = -\,\frac{F_d}{m}\,\frac{v_x}{v}
-$$
+   - Ecuaciones en el eje X
 
-- Ecuaciones en el eje Y
+   $$
+   a_x = -\,\frac{F_d}{m}\,\frac{v_x}{v}
+   $$
 
-$$
-a_y = -g - \frac{F_d}{m}\,\frac{v_y}{v}
-$$
+   - Ecuaciones en el eje Y
 
-- Integración numérica (Método de Euler)
+   $$
+   a_y = -g - \frac{F_d}{m}\,\frac{v_y}{v}
+   $$
 
-Actualización de la velocidad:
+2. **Integración numérica (Método de Euler)**
 
-$$
-\vec{v} = \vec{v} + \vec{a}\,\Delta t
-$$
+   Actualización de la velocidad:
 
-Actualización de la posición:
+   $$
+   \vec{v} = \vec{v} + \vec{a}\,\Delta t
+   $$
 
-$$
-\vec{x} = \vec{x} + \vec{v}\,\Delta t
-$$
+   Actualización de la posición:
 
----
+   $$
+   \vec{x} = \vec{x} + \vec{v}\,\Delta t
+   $$
