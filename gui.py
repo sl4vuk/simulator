@@ -2,6 +2,7 @@
 # Interfaz PySide6 que usa core.py y widgets.py
 # Ejecutar: python gui.py
 
+
 import os
 import sys
 from math import hypot
@@ -12,12 +13,20 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt, QTimer, QSize
 from PySide6.QtGui import QFont, QIcon, QPalette, QColor
 
+BASE_DIR = os.path.dirname(
+    sys.executable if getattr(sys, 'frozen', False) else os.path.abspath(__file__)
+)
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
+# AHORA sí funcionan los imports locales
 from core import ProjectileSimulator
 from widgets import make_button, asset_path, create_top_bar
 
 # Matplotlib canvas
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
+
 
 class SimuladorWindow(QWidget):
     def __init__(self):

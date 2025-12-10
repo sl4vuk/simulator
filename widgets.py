@@ -2,16 +2,25 @@
 # Helpers para crear botones y estilos reutilizables
 
 import os
+import sys
 from PySide6.QtWidgets import QPushButton, QLabel, QFrame
 from PySide6.QtGui import QFont, QIcon
 from PySide6.QtCore import QSize
 
-# base assets folder (resuelve incluso si se ejecuta desde otro dir)
-BASE_ASSETS = os.path.join(os.path.dirname(__file__), "assets")
+def base_dir():
+    if getattr(sys, 'frozen', False):
+        # ejecutándose como .exe
+        return os.path.dirname(sys.executable)
+    else:
+        # ejecutándose como script normal
+        return os.path.dirname(__file__)
+
+BASE_ASSETS = os.path.join(base_dir(), "assets")
 
 def asset_path(name):
-    """Retorna ruta absoluta a un asset en assets/"""
     return os.path.join(BASE_ASSETS, name)
+
+    
 
 def make_button(text, callback=None, icon=None, minimum_height=36):
     btn = QPushButton(text)
