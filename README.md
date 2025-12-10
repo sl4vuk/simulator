@@ -1,4 +1,4 @@
-[![banner.png](https://raw.githubusercontent.com/sl4vuk/simulator/refs/heads/main/banner.png)]
+![banner.png](https://raw.githubusercontent.com/sl4vuk/simulator/refs/heads/main/banner.png)
 
 # 🔰 Simulador de Movimiento Parabólico
 
