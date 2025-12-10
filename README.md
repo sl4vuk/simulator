@@ -1,4 +1,4 @@
-[![Chat-GPT-Image-Nov-25-2025-05-29-48-AM.png](https://i.postimg.cc/qv05BGv0/Chat-GPT-Image-Nov-25-2025-05-29-48-AM.png)](https://postimg.cc/ppGZqzj1)
+[![banner.png](https://raw.githubusercontent.com/sl4vuk/simulator/refs/heads/main/banner.png)]
 
 # 🔰 Simulador de Movimiento Parabólico
 
